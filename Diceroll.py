@@ -6,7 +6,7 @@ DICE = 1 #set how many dice are rolled
 
 ROLLAGAIN = "yes"
 
-while roll_again == "yes" or roll_again == "y":
+while ROLLAGAIN.startswith('Y') or ROLLAGAIN.startswith('y'):
             #ask the user to input the highest value of the dice
             MAX = int(input("How many sides on the di?"))
             #ask the user to set how many dice are rolled
@@ -21,4 +21,4 @@ while roll_again == "yes" or roll_again == "y":
                     if count >= DICE:
                             break
             #ask user if they want to roll again
-            roll_again = input("Roll again?")
+            ROLLAGAIN = input("Roll again?")
