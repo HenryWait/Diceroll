@@ -4,7 +4,7 @@ MIN = 1 #set lowest vlaue of the dice roll
 MAX = 6 #set highest vlaue of the dice roll
 DICE = 1 #set how many dice are rolled
 
-roll_again = "yes"
+ROLLAGAIN = "yes"
 
 while roll_again == "yes" or roll_again == "y":
             #ask the user to input the highest value of the dice
