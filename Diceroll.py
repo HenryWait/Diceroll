@@ -4,9 +4,9 @@ MIN = 1 #set lowest vlaue of the dice roll
 MAX = 6 #set highest vlaue of the dice roll
 DICE = 1 #set how many dice are rolled
 
-ROLLAGAIN = "yes"
+ROLLAGAIN = "y" #continue playing if starting with y
 
-while ROLLAGAIN.startswith('Y') or ROLLAGAIN.startswith('y'):
+while ROLLAGAIN.startswith('y'):
             #ask the user to input the highest value of the dice
             MAX = int(input("How many sides on the di?"))
             #ask the user to set how many dice are rolled
@@ -21,4 +21,4 @@ while ROLLAGAIN.startswith('Y') or ROLLAGAIN.startswith('y'):
                     if count >= DICE:
                             break
             #ask user if they want to roll again
-            ROLLAGAIN = input("Roll again?")
+            ROLLAGAIN = input("Roll again?").lower()
