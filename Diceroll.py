@@ -15,10 +15,8 @@ while ROLLAGAIN.startswith('y'):
             print ("You rolled...")
             count = 0
             #while loop repeats roll for how many dice are set
-            while True:
+            while count < DICE:
                     print (random.randint(MIN, MAX))
                     count += 1
-                    if count >= DICE:
-                            break
             #ask user if they want to roll again
             ROLLAGAIN = input("Roll again?").lower()
